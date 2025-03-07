@@ -54,7 +54,7 @@ VIS domain: python test_hsi_mgpus_all.py --dataset_name HOT23TEST --data_path /d
 
 (e) Run in IMEC25 (fine-tune the parameter of NIR adapter in IMEC25):
 ```
-VIS domain: python test_hsi_mgpus_all.py --dataset_name HOT23TEST --data_path /data/lizf/HOT/Whispers2023/validation/HSI-VIS --model_path final_model_path_IMEC25
+NIR domain: python test_hsi_mgpus_all.py --dataset_name HOT23TEST --data_path /data/lizf/HOT/Whispers2023/validation/HSI-VIS --model_path final_model_path_IMEC25
 ```
 
 ## 7. Cite
