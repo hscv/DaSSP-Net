@@ -1,0 +1,15 @@
+HSI-RedNIR-FalseColor/ball&mirror7
+HSI-RedNIR-FalseColor/bytheriver1
+HSI-RedNIR-FalseColor/cards11
+HSI-RedNIR-FalseColor/cloth1
+HSI-RedNIR-FalseColor/dice1
+HSI-RedNIR-FalseColor/duck3
+HSI-RedNIR-FalseColor/glass2
+HSI-RedNIR-FalseColor/officechair1
+HSI-RedNIR-FalseColor/officefan2
+HSI-RedNIR-FalseColor/partylights3
+HSI-RedNIR-FalseColor/pool5
+HSI-RedNIR-FalseColor/rainystreet2
+HSI-RedNIR-FalseColor/rainystreet5
+HSI-RedNIR-FalseColor/receipts3
+HSI-RedNIR-FalseColor/whitecup3

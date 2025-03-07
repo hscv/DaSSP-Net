@@ -1,0 +1,11 @@
+HSI-RedNIR-FalseColor/ball&mirror9
+HSI-RedNIR-FalseColor/cards16
+HSI-RedNIR-FalseColor/cards19
+HSI-RedNIR-FalseColor/dice2
+HSI-RedNIR-FalseColor/duck5
+HSI-RedNIR-FalseColor/partylights6
+HSI-RedNIR-FalseColor/pool10
+HSI-RedNIR-FalseColor/pool11
+HSI-RedNIR-FalseColor/rainystreet10
+HSI-RedNIR-FalseColor/rainystreet16
+HSI-RedNIR-FalseColor/whitecup1
