@@ -13,19 +13,19 @@ The environment configuration follows [https://github.com/jiawen-zhu/ViPT](https
 + cd <PATH_of_DaSSP_Net>
 + python tracking/create_default_local_file.py --workspace_dir . --data_dir ./data --save_dir ./output
 
-## 4. First-satge train
+## 4. First-satge train in HOT2023
 (a) Download pretrained model and put in the folder "pretrained_model", which is available in  
-    - https://pan.baidu.com/s/1vBmGFoQ4MRTUeLE3o7pteg 
-    - Access code: 1234    
+    - https://pan.baidu.com/s/1qRuCKQ2hhE5-MhrkeLiEQA
+    - Access code: 2025    
 
 (b) Change the path of training data in lib/train/base_functions.py (Line 100: settings.env.hsi_dir='/data/XXX/XX')
 
 (c) Run: python tracking/train.py --script vipt --config deep_all --save_dir ./output
 
-## 5. Second-satge train
+## 5. Second-satge train in HOT2023
 (a) Use the model trained in first stage and put in the folder "pretrained_model", which is available in  
-    - https://pan.baidu.com/s/1vBmGFoQ4MRTUeLE3o7pteg 
-    - Access code: 1234    
+    - https://pan.baidu.com/s/1WJLo72hwzr6y_BtjFFp-Dg
+    - Access code: 2025    
 
 (b) Change the path of training data in lib/train/base_functions.py (Line 100: settings.env.hsi_dir='/data/XXX/XX')
 
@@ -35,16 +35,27 @@ The environment configuration follows [https://github.com/jiawen-zhu/ViPT](https
 
 ## 6. Test
 (a) Download testing model in  
-
-    - https://pan.baidu.com/s/15YdmJRvagPzKcUNWBloiHA 
-    - Access code: 1234  
+    - https://pan.baidu.com/s/1WJLo72hwzr6y_BtjFFp-Dg
+    - Access code: 2025
     
 (b) Put the testing model in the folder "final_model".
 
-(c) Run:
-VIS domain: python test_hsi_mgpus_all.py --dataset_name HOT23TEST --data_path /data/lizf/HOT/Whispers2023/validation/HSI-VIS --model_path final_model_path
-NIR domain: python test_hsi_mgpus_all.py --dataset_name HOT23TEST --data_path /data/lizf/HOT/Whispers2023/validation/HSI-NIR --model_path final_model_path
-RedNIR domain: python test_hsi_mgpus_all.py --dataset_name HOT23TEST --data_path /data/lizf/HOT/Whispers2023/validation/HSI-RedNIR --model_path final_model_path
+(c) Run in HOT2023:
+```
+VIS domain: python test_hsi_mgpus_all.py --dataset_name HOT23TEST --data_path /data/lizf/HOT/Whispers2023/validation/HSI-VIS --model_path final_model_path_HOT2023
+NIR domain: python test_hsi_mgpus_all.py --dataset_name HOT23TEST --data_path /data/lizf/HOT/Whispers2023/validation/HSI-NIR --model_path final_model_path_HOT2023
+RedNIR domain: python test_hsi_mgpus_all.py --dataset_name HOT23TEST --data_path /data/lizf/HOT/Whispers2023/validation/HSI-RedNIR --model_path final_model_path_HOT2023
+```
+
+(d) Run in HOT2020 and HOT2022 (use the trained model in HOT2023):
+```
+VIS domain: python test_hsi_mgpus_all.py --dataset_name HOT23TEST --data_path /data/lizf/HOT/Whispers2023/validation/HSI-VIS --model_path final_model_path_HOT2023
+```
+
+(e) Run in IMEC25 (fine-tune the parameter of NIR adapter in IMEC25):
+```
+VIS domain: python test_hsi_mgpus_all.py --dataset_name HOT23TEST --data_path /data/lizf/HOT/Whispers2023/validation/HSI-VIS --model_path final_model_path_IMEC25
+```
 
 ## 7. Cite
 ```
