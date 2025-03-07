@@ -3,7 +3,7 @@
 ## The soure code of the paper "Multi-domain Universal Representation Learning for Hyperspectral Object Tracking".
 
 ## 1. Environment Setting
-The environment configuration follows [https://github.com/fzh0917/STMTrack](https://github.com/jiawen-zhu/ViPT/tree/main).
+The environment configuration follows [https://github.com/jiawen-zhu/ViPT](https://github.com/jiawen-zhu/ViPT/tree/main).
 
 ## 2. Hyperspectral Video Dataset
 + The HOT2023, HOT2020, and HOT2022 datasets are from "https://www.hsitracking.com/".
